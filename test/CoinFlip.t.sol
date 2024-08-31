@@ -6,7 +6,7 @@ import "../src/CoinFlip.sol";
 
 
 /** 
- * 解题思路：这里的关键在于随机源的获取是错误的，只要按照相同的逻辑来生成随机数，那么就可以
+ * 解题思路：这里的关键在于随机源的获取是错误的，只要按照相同的逻辑来生成随机数，那么就可以直接获得结果，每次就可以猜中
  */
 contract CoinFlipHackTest is Test {
     CoinFlip public c;
