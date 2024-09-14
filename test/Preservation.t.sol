@@ -6,7 +6,7 @@ import {AttackContract, Preservation} from "../src/Preservation.sol";
 
 
 /** 
- * 解题思路：delegatecall 调用合约时，实际的数据
+ * 解题思路：delegatecall 调用合约时，实际的数据还是在发起调用的合约，而不会写入被调用的合约，可以通过设置一个同样内存布局的合约，然后通过 setTime 来设置 owner
  */
 contract HackPreservationTest is Test {
     address hacker = address(1111111111111111);
