@@ -22,7 +22,7 @@ contract AlienCodex is Ownable {
     }
 
     function retract() public contacted {
-        codex.length--;
+        //codex.length--;
     }
 
     function revise(uint256 i, bytes32 _content) public contacted {
